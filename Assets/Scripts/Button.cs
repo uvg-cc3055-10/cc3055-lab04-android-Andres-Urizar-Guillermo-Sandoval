@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class Button : MonoBehaviour {
 
 	// Use this for initialization
@@ -18,5 +19,6 @@ public class Button : MonoBehaviour {
     public void changeScene()
     {
         SceneManager.LoadScene("Game");
+      //  GameController.instance.gameOver = false;
     }
 }
