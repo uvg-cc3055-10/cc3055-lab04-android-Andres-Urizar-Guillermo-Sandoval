@@ -5,7 +5,7 @@ using UnityEngine;
 public class MeteorSpawner : MonoBehaviour {
 
     public GameObject meteor;
-    float spawnTime = 4f;
+    public float spawnTime = 3f;
     float elapsedTime;
 
 	// Use this for initialization
