@@ -11,11 +11,13 @@ public class GameController : MonoBehaviour
     public float time = 0;
     public float highscore = 0;
     public Text score;
+    AudioSource audio;
 
     // Use this for initialization
     void Start()
     {
         instance = this;
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -28,6 +30,7 @@ public class GameController : MonoBehaviour
         }
         else
         {
+            audio.Play();
             HighScore();
         }
     }
